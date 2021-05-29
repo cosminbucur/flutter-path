@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class WhiteTheme {
-  ThemeData lightTheme = ThemeData.light().copyWith(
+ThemeData lightThemeData(BuildContext context) {
+  return ThemeData.light().copyWith(
       primaryColor: Color(0xfff5f5f5),
       accentColor: Color(0xff40bf7a),
       textTheme: TextTheme(
