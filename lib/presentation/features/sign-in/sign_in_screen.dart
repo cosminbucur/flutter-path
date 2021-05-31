@@ -3,12 +3,12 @@ import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 
-class LoginScreen extends StatelessWidget {
+class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        BackgroundImage(image: 'images/login_bg.jpeg'),
+        BackgroundImage(image: 'images/sign_in_bg.jpeg'),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: Column(
@@ -51,7 +51,7 @@ class LoginScreen extends StatelessWidget {
                     height: 25,
                   ),
                   RoundedButton(
-                      buttonName: 'Login',
+                      buttonName: 'Sign in',
                       press: () {
                         Navigator.pushNamed(context, AppRoutes.home);
                       }),
@@ -61,7 +61,7 @@ class LoginScreen extends StatelessWidget {
                 ],
               ),
               GestureDetector(
-                onTap: () => Navigator.pushNamed(context, AppRoutes.signup),
+                onTap: () => Navigator.pushNamed(context, AppRoutes.signUp),
                 child: Container(
                   child: Text(
                     'Create New Account',

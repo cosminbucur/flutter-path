@@ -20,3 +20,24 @@ const kSecondaryColor = Colors.teal;
 const kTextColor = Colors.teal;
 
 const kAnimationDuration = Duration(milliseconds: 200);
+
+// const headingStyle = TextStyle(
+//                     color: Colors.white,
+//                     fontSize: SizeConfig.getProportionateScreenHeight(28),
+//                     fontWeight: FontWeight.bold,
+//                     height: 1.5,
+//                   )
+
+// form error
+final RegExp emailValidatorRegExp = RegExp(
+    r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
+const String kEmailNullError = "Please Enter your email";
+const String kInvalidEmailError = "Please Enter a valid email";
+
+const String kPassNullError = "Please Enter your password";
+const String kShortPassError = "Please is too short";
+const String kMatchPassError = "Passwords don't match";
+
+const String kNameNullError = "Please Enter your name";
+const String kPhoneNumberNullError = "Please Enter your phone number";
+const String kAddressNullError = "Please Enter your address";

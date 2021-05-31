@@ -10,7 +10,7 @@ class ForgotPasswordScreen extends StatelessWidget {
 
     return Stack(
       children: [
-        BackgroundImage(image: 'images/login_bg.jpeg'),
+        BackgroundImage(image: 'images/forgot_pass.jpeg'),
         Scaffold(
           backgroundColor: Colors.transparent,
           appBar: AppBar(
@@ -61,7 +61,7 @@ class ForgotPasswordScreen extends StatelessWidget {
                     RoundedButton(
                       buttonName: 'Send',
                       press: () {
-                        Navigator.pushNamed(context, AppRoutes.signin);
+                        Navigator.pushNamed(context, AppRoutes.signIn);
                       },
                     ),
                   ],

@@ -7,15 +7,14 @@ class DefaultButton extends StatelessWidget {
     Key? key,
     required this.text,
     required this.press,
-    required this.sizeConfig,
   }) : super(key: key);
 
   final String text;
   final VoidCallback press;
-  final SizeConfig sizeConfig;
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig sizeConfig = SizeConfig(context);
     return SizedBox(
       width: double.infinity,
       height: sizeConfig.getProportionateScreenHeight(56),

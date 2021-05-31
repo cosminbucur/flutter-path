@@ -26,7 +26,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         RoundedButton(
           buttonName: 'Sign out',
           press: () {
-            Navigator.pushNamed(context, AppRoutes.signin);
+            Navigator.pushNamed(context, AppRoutes.signIn);
           },
         ),
       ]),

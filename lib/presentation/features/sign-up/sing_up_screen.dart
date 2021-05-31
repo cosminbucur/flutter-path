@@ -5,14 +5,14 @@ import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 
-class RegisterScreen extends StatelessWidget {
+class SignUpScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
 
     return Stack(
       children: [
-        BackgroundImage(image: 'images/register_bg.jpeg'),
+        BackgroundImage(image: 'images/signup_bg.jpeg'),
         Scaffold(
           backgroundColor: Colors.transparent,
           body: SingleChildScrollView(
@@ -107,7 +107,7 @@ class RegisterScreen extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () =>
-                              Navigator.pushNamed(context, AppRoutes.signin),
+                              Navigator.pushNamed(context, AppRoutes.signIn),
                           child: Text(
                             'Login',
                             style: kBodyText.copyWith(

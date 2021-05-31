@@ -24,16 +24,19 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^1.0.2
-  google_fonts: ^2.1.0 # allows you to easily use any of the 977 fonts from fonts.google.com
+  # data
+  http: ^0.13.3 # http requests
+  sqflite: ^2.0.0+3 # database
+  
+  # ui
   form_field_validator: ^1.1.0 # flutter form field validator that provides common validation options
   animations: ^2.0.0 # pre-canned animations for commonly-desired effects
-  http: ^0.13.3 # http requests
   flutter_svg: ^0.22.0  # use SVGs in app
-  provider: ^5.0.0  # state management
-  flutter_translate: ^3.0.1
+  google_fonts: ^2.1.0 # allows you to easily use any of the 977 fonts from fonts.google.com
+  cupertino_icons: ^1.0.2
+  
+  # misc
+  easy_localization: ^3.0.0
   
 dev_dependencies:
   flutter_test:
@@ -57,7 +60,7 @@ flutter:
     - assets/icons/
 
     # language translation files
-    - assets/i18n/
+    - assets/translations/
 
     # html files
     - assets/html/license_agreement.html
