@@ -1,32 +1,23 @@
-/* This is where all our application constants will be present and this is 
-different for each application.
-*/
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// colors
 const TextStyle kBodyText =
     TextStyle(fontSize: 22, color: Colors.white, height: 1.5);
 
-const Color kWhite = Colors.white;
-const Color kBlue = Color(0xff5663ff);
+const kWhite = Colors.white;
+const kBlue = Color(0xff5663ff);
 
-const kPrimaryDarkColor = Colors.white;
+const kPrimaryColor = Colors.lightGreen;
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
   end: Alignment.topRight,
   colors: [Color(0), Color(0)],
 );
-const kSecondaryColor = Colors.teal;
+const kSecondaryColor = Colors.greenAccent;
 const kTextColor = Colors.teal;
 
 const kAnimationDuration = Duration(milliseconds: 200);
-
-// const headingStyle = TextStyle(
-//                     color: Colors.white,
-//                     fontSize: SizeConfig.getProportionateScreenHeight(28),
-//                     fontWeight: FontWeight.bold,
-//                     height: 1.5,
-//                   )
 
 // form error
 final RegExp emailValidatorRegExp = RegExp(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
@@ -39,8 +40,7 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
             text: "Continue",
             press: () {
               if (_formKey.currentState!.validate()) {
-                // GO TO OTP
-                // Navigator.pushNamed(context, AppRoutes.completeProfile);
+                Navigator.pushNamed(context, AppRoutes.otp);
               }
             },
           ),

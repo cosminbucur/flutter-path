@@ -38,7 +38,7 @@ class _SignInFormState extends State<SignInForm> {
                     remember = value!;
                   });
                 },
-                activeColor: kPrimaryDarkColor,
+                activeColor: kPrimaryColor,
               ),
               Text("Remember me"),
               Spacer(),

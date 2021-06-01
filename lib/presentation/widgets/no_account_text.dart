@@ -25,7 +25,7 @@ class NoAccountText extends StatelessWidget {
             "Sign up",
             style: TextStyle(
                 fontSize: sizeConfig.getProportionateScreenWidth(16),
-                color: kPrimaryDarkColor),
+                color: kPrimaryColor),
           ),
         ),
       ],

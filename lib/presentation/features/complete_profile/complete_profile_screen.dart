@@ -10,7 +10,7 @@ class CompleteProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         leading: SizedBox(),
-        title: Text("Sign Up"),
+        title: Text("Complete Profile"),
       ),
       body: Body(),
     );

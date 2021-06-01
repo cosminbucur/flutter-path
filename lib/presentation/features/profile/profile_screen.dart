@@ -1,35 +1,25 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutterpath/config/routes/routes.dart';
-import 'package:flutterpath/presentation/widgets/widgets.dart';
+import 'package:flutterpath/constants/constants.dart';
+import 'package:flutterpath/constants/enums.dart';
+import 'package:flutterpath/presentation/features/profile/components/body.dart';
 
-class ProfileScreen extends StatefulWidget {
-  ProfileScreen({Key? key}) : super(key: key);
+import 'components/custom_bottom_nav_bar.dart';
 
-  @override
-  _ProfileScreenState createState() => _ProfileScreenState();
-}
-
-class _ProfileScreenState extends State<ProfileScreen> {
-  final String username = 'Cosmin Bucur';
+class ProfileScreen extends StatelessWidget {
+  const ProfileScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(username),
-        leading: CircleAvatar(
-          radius: 12,
-          backgroundImage: AssetImage(''),
-        ),
+        title: Text("Profile"),
       ),
-      body: Stack(children: [
-        RoundedButton(
-          buttonName: 'Sign out',
-          press: () {
-            Navigator.pushNamed(context, AppRoutes.signIn);
-          },
-        ),
-      ]),
+      body: Body(),
+      bottomNavigationBar: CustomBottomNavBar(
+        selectedMenu: MenuState.profile,
+      ),
     );
   }
 }

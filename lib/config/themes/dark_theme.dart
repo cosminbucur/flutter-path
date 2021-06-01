@@ -13,7 +13,68 @@ ThemeData darkThemeData(BuildContext context) {
 }
 
 TextTheme textTheme(BuildContext context) {
-  return GoogleFonts.robotoTextTheme(Theme.of(context).textTheme);
+  // return GoogleFonts.robotoTextTheme(Theme.of(context).textTheme);
+  return TextTheme(
+    headline1: GoogleFonts.roboto(
+        fontSize: 96,
+        fontWeight: FontWeight.w300,
+        letterSpacing: -1.5,
+        color: kWhite),
+    headline2: GoogleFonts.roboto(
+        fontSize: 60,
+        fontWeight: FontWeight.w300,
+        letterSpacing: -0.5,
+        color: kWhite),
+    headline3: GoogleFonts.roboto(
+        fontSize: 48, fontWeight: FontWeight.w400, color: kWhite),
+    headline4: GoogleFonts.roboto(
+        fontSize: 34,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.25,
+        color: kWhite),
+    headline5: GoogleFonts.roboto(
+        fontSize: 24, fontWeight: FontWeight.w400, color: kWhite),
+    headline6: GoogleFonts.roboto(
+        fontSize: 20,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.15,
+        color: kWhite),
+    subtitle1: GoogleFonts.roboto(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.15,
+        color: kWhite),
+    subtitle2: GoogleFonts.roboto(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 0.1,
+        color: kWhite),
+    bodyText1: GoogleFonts.roboto(
+        fontSize: 16,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.5,
+        color: kWhite),
+    bodyText2: GoogleFonts.roboto(
+        fontSize: 14,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.25,
+        color: kWhite),
+    button: GoogleFonts.roboto(
+        fontSize: 14,
+        fontWeight: FontWeight.w500,
+        letterSpacing: 1.25,
+        color: kWhite),
+    caption: GoogleFonts.roboto(
+        fontSize: 12,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 0.4,
+        color: kWhite),
+    overline: GoogleFonts.roboto(
+        fontSize: 10,
+        fontWeight: FontWeight.w400,
+        letterSpacing: 1.5,
+        color: kWhite),
+  );
 }
 
 AppBarTheme appBarTheme() {
@@ -21,7 +82,7 @@ AppBarTheme appBarTheme() {
     color: Color(0xff1f655d),
     elevation: 0,
     brightness: Brightness.light,
-    iconTheme: IconThemeData(color: Colors.white),
+    iconTheme: IconThemeData(color: kWhite),
     textTheme: TextTheme(
       headline6: TextStyle(color: Colors.grey),
     ),

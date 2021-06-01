@@ -3,9 +3,12 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
-import 'package:flutterpath/presentation/widgets/widgets.dart';
+import 'package:flutterpath/presentation/widgets/old/background_image.dart';
+import 'package:flutterpath/presentation/widgets/old/password_field_input.dart';
+import 'package:flutterpath/presentation/widgets/old/rounded_button.dart';
+import 'package:flutterpath/presentation/widgets/old/text_field_input.dart';
 
-class SignUpScreen extends StatelessWidget {
+class SignUp2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -107,7 +110,7 @@ class SignUpScreen extends StatelessWidget {
                         ),
                         GestureDetector(
                           onTap: () =>
-                              Navigator.pushNamed(context, AppRoutes.signIn),
+                              Navigator.pushNamed(context, AppRoutes.signIn2),
                           child: Text(
                             'Login',
                             style: kBodyText.copyWith(

@@ -69,7 +69,7 @@ class _BodyState extends State<Body> {
                     DefaultButton(
                       text: "Continue",
                       press: () {
-                        Navigator.pushNamed(context, AppRoutes.signIn);
+                        Navigator.pushNamed(context, AppRoutes.signIn2);
                       },
                     ),
                     Spacer(),
@@ -90,7 +90,7 @@ class _BodyState extends State<Body> {
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? kPrimaryDarkColor : Colors.greenAccent,
+        color: currentPage == index ? kPrimaryColor : Colors.greenAccent,
         borderRadius: BorderRadius.circular(3),
       ),
     );

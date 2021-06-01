@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutterpath/presentation/features/complete_profile/components/complete_profile_form.dart';
-import 'package:flutterpath/presentation/features/sign-in/components/social_card.dart';
-import 'package:flutterpath/presentation/features/sign-up/components/sign_up_form.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 
 class Body extends StatefulWidget {
