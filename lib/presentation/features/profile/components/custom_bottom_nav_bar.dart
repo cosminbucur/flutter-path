@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
 import 'package:flutterpath/constants/enums.dart';

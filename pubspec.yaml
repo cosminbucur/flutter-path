@@ -25,11 +25,11 @@ dependencies:
     sdk: flutter
 
   # data
+  flutter_mobx: ^2.0.0 # state managemet
   http: ^0.13.3 # http requests
   sqflite: ^2.0.0+3 # database
   
   # ui
-  form_field_validator: ^1.1.0 # flutter form field validator that provides common validation options
   animations: ^2.0.0 # pre-canned animations for commonly-desired effects
   flutter_svg: ^0.22.0  # use SVGs in app
   google_fonts: ^2.1.0 # allows you to easily use any of the 977 fonts from fonts.google.com
