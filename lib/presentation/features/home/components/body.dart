@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterpath/domain/models/Product.dart';
 import 'package:flutterpath/presentation/features/home/components/categories.dart';
-import 'package:flutterpath/presentation/features/home/components/product_card.dart';
-import 'package:flutterpath/presentation/features/home/components/section_tile.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 
 import 'discount_banner.dart';

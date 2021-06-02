@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutterpath/constants/constants.dart';
-import 'package:flutterpath/utils/helpers/size_config.dart';
 
 import 'profile_menu_item.dart';
 import 'profile_picture.dart';
@@ -11,14 +8,13 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: [
         ProfilePicture(),
         SizedBox(height: 20),
         ProfileMenuItem(
           text: "My Account",
-          icon: "assets/icons/camera.svg",
+          icon: "assets/icons/user.svg",
           press: () {},
         ),
         ProfileMenuItem(
@@ -37,8 +33,8 @@ class Body extends StatelessWidget {
           press: () {},
         ),
         ProfileMenuItem(
-          text: "Log Out",
-          icon: "assets/icons/log_out.svg",
+          text: "Sign Out",
+          icon: "assets/icons/sign_out.svg",
           press: () {},
         ),
       ],

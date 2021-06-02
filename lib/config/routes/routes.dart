@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/old/screens/forgot_password2_screen.dart';
+import 'package:flutterpath/old/screens/home2_screen.dart';
+import 'package:flutterpath/old/screens/sign_in2_screen.dart';
+import 'package:flutterpath/old/screens/sing_up2_screen.dart';
 import 'package:flutterpath/presentation/features/cart/cart_screen.dart';
 import 'package:flutterpath/presentation/features/complete_profile/complete_profile_screen.dart';
 import 'package:flutterpath/presentation/features/forgot_password/forgot_password_screen.dart';
 import 'package:flutterpath/presentation/features/profile/profile_screen.dart';
-import 'package:flutterpath/presentation/widgets/old/screens/forgot_password2_screen.dart';
 import 'package:flutterpath/presentation/features/home/home_screen.dart';
-import 'package:flutterpath/presentation/widgets/old/screens/home2_screen.dart';
 import 'package:flutterpath/presentation/features/login_success/login_success_screen.dart';
 import 'package:flutterpath/presentation/features/otp/otp_screen.dart';
 import 'package:flutterpath/presentation/features/product_details/product_details_screen.dart';
-import 'package:flutterpath/presentation/widgets/old/screens/sign_in2_screen.dart';
 import 'package:flutterpath/presentation/features/sign-in/sign_in_screen.dart';
 import 'package:flutterpath/presentation/features/sign-up/sign_up_screen.dart';
-import 'package:flutterpath/presentation/widgets/old/screens/sing_up2_screen.dart';
 import 'package:flutterpath/presentation/features/splash/splash_screen.dart';
 
 final Map<String, WidgetBuilder> routes = {

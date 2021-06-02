@@ -12,10 +12,10 @@ class _ProductReviewScreenState extends State<ProductReviewScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('ProductReview'),
+        title: Text('Product Review'),
       ),
       body: Container(
-        child: Text('ProductReview'),
+        child: Text('Product Review'),
       ),
     );
   }

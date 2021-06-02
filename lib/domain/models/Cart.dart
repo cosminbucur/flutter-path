@@ -1,15 +1,15 @@
 import 'package:flutterpath/domain/models/Product.dart';
 
-class Cart {
+class CartItem {
   final Product product;
   final int numOfItems;
 
-  Cart({required this.product, required this.numOfItems});
+  CartItem({required this.product, required this.numOfItems});
 }
 
 // mock data
-List<Cart> demoCarts = [
-  Cart(product: demoProducts[0], numOfItems: 2),
-  Cart(product: demoProducts[1], numOfItems: 1),
-  Cart(product: demoProducts[2], numOfItems: 2),
+List<CartItem> demoCarts = [
+  CartItem(product: demoProducts[0], numOfItems: 2),
+  CartItem(product: demoProducts[1], numOfItems: 1),
+  CartItem(product: demoProducts[2], numOfItems: 2),
 ];

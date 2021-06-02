@@ -44,7 +44,7 @@ class _BodyState extends State<Body> {
                 demoCarts.removeAt(index);
               });
             },
-            child: CartItemCard(cart: demoCarts[index]),
+            child: CartItemCard(cartItem: demoCarts[index]),
           ),
         ),
       ),

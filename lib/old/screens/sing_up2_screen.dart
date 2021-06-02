@@ -3,10 +3,11 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutterpath/config/routes/routes.dart';
 import 'package:flutterpath/constants/constants.dart';
-import 'package:flutterpath/presentation/widgets/old/background_image.dart';
-import 'package:flutterpath/presentation/widgets/old/password_field_input.dart';
-import 'package:flutterpath/presentation/widgets/old/rounded_button.dart';
-import 'package:flutterpath/presentation/widgets/old/text_field_input.dart';
+
+import '../background_image.dart';
+import '../password_field_input.dart';
+import '../rounded_button.dart';
+import '../text_field_input.dart';
 
 class SignUp2Screen extends StatelessWidget {
   @override

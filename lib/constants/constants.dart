@@ -2,12 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 // colors
-const TextStyle kBodyText =
-    TextStyle(fontSize: 22, color: Colors.white, height: 1.5);
-
-const kWhite = Colors.white;
-const kBlue = Color(0xff5663ff);
-
 const kPrimaryColor = Colors.lightGreen;
 const kPrimaryGradientColor = LinearGradient(
   begin: Alignment.topLeft,
@@ -32,3 +26,10 @@ const String kMatchPassError = "Passwords don't match";
 const String kNameNullError = "Please Enter your name";
 const String kPhoneNumberNullError = "Please Enter your phone number";
 const String kAddressNullError = "Please Enter your address";
+
+// old
+const TextStyle kBodyText =
+    TextStyle(fontSize: 22, color: Colors.white, height: 1.5);
+
+const kWhite = Colors.white;
+const kBlue = Color(0xff5663ff);

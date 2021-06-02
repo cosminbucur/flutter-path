@@ -14,7 +14,7 @@ class CartScreen extends StatelessWidget {
     return Scaffold(
       appBar: _buildAppBar(context),
       body: Body(),
-      bottomNavigationBar: CeckoutCard(),
+      bottomNavigationBar: CheckoutCard(),
     );
   }
 
@@ -36,8 +36,8 @@ class CartScreen extends StatelessWidget {
   }
 }
 
-class CeckoutCard extends StatelessWidget {
-  const CeckoutCard({
+class CheckoutCard extends StatelessWidget {
+  const CheckoutCard({
     Key? key,
   }) : super(key: key);
 

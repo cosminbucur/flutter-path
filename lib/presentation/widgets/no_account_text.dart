@@ -20,7 +20,7 @@ class NoAccountText extends StatelessWidget {
               TextStyle(fontSize: sizeConfig.getProportionateScreenWidth(16)),
         ),
         GestureDetector(
-          onTap: () => Navigator.pushNamed(context, AppRoutes.signUp2),
+          onTap: () => Navigator.pushNamed(context, AppRoutes.signUp),
           child: Text(
             "Sign up",
             style: TextStyle(

@@ -42,7 +42,8 @@ List<Product> demoProducts = [
     ],
     title: "Wireless Controller for PS4",
     price: 64.99,
-    description: "Some description",
+    description:
+        "Latest motion sensing technology--- Improved analog sticks and trigger buttons allow for unparalleled accuracy with every move.",
     rating: 4.8,
     isFavorite: true,
     isPopular: true,
@@ -62,7 +63,8 @@ List<Product> demoProducts = [
     ],
     title: "TV set",
     price: 50.5,
-    description: "Some description",
+    description:
+        "Latest motion sensing technology--- Improved analog sticks and trigger buttons allow for unparalleled accuracy with every move.",
     rating: 4.1,
     isPopular: true,
   ),
@@ -80,7 +82,8 @@ List<Product> demoProducts = [
     ],
     title: "Remote control",
     price: 23.5,
-    description: "Some description",
+    description:
+        "Latest motion sensing technology--- Improved analog sticks and trigger buttons allow for unparalleled accuracy with every move.",
     rating: 3.2,
     isPopular: true,
   ),
