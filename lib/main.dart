@@ -32,8 +32,8 @@ class AwesomeApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Path',
       theme: darkThemeData(context),
-      initialRoute: AppRoutes.splash,
-      // initialRoute: AppRoutes.httpDetails,
+      // initialRoute: AppRoutes.splash,
+      initialRoute: AppRoutes.home,
       routes: routes,
     );
   }

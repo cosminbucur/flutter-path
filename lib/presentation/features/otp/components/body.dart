@@ -67,7 +67,7 @@ class _BodyState extends State<Body> {
           tween: IntTween(begin: 30, end: 0),
           duration: Duration(seconds: 30),
           builder: (context, value, child) => Text(
-            "00:${value}",
+            "00:$value",
             style: TextStyle(color: kPrimaryColor),
           ),
           onEnd: () {},

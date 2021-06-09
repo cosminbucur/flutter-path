@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutterpath/domain/models/Product.dart';
+import 'package:flutterpath/domain/models/product.dart';
 import 'package:flutterpath/presentation/widgets/default_button.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 

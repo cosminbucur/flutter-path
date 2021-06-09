@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterpath/constants/constants.dart';
-import 'package:flutterpath/domain/models/Product.dart';
+import 'package:flutterpath/domain/models/product.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 

@@ -34,10 +34,11 @@
         "Color(0xFFDECB9C)",
         "Color(0xFFF6625E)"
       ],
-      "title": "TV set",
+      "title": "TV set1",
       "price": 50.5,
       "description": "Latest motion sensing technology--- Improved analog sticks and trigger buttons allow for unparalleled accuracy with every move.",
       "rating": 4.1,
+      "isFavorite": false,
       "isPopular": true
     },
     {
@@ -52,10 +53,11 @@
         "Color(0xFFDECB9C)",
         "Color(0xFFF6625E)"
       ],
-      "title": "Remote control",
+      "title": "Remote control1",
       "price": 23.5,
       "description": "Latest motion sensing technology--- Improved analog sticks and trigger buttons allow for unparalleled accuracy with every move.",
       "rating": 3.2,
+      "isFavorite": false,
       "isPopular": true
     }
   ]

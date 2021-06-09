@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutterpath/domain/models/Product.dart';
+import 'package:flutterpath/domain/models/product.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 
 import 'components/body.dart';

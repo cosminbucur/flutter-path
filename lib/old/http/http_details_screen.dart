@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:flutterpath/domain/models/Product.dart';
+import 'package:flutterpath/domain/models/product.dart';
 import 'package:http/http.dart' as http;
 
 class HttpDetailsScreen extends StatefulWidget {
@@ -13,11 +13,13 @@ class HttpDetailsScreen extends StatefulWidget {
 
 class _HttpDetailsScreenState extends State<HttpDetailsScreen> {
   late Future<Product> futureProduct;
+  late Future<List<Product>> futureProducts;
 
   @override
-  void initState() {
+  void initState() async {
     super.initState();
-    futureProduct = fetchProduct();
+    futureProduct = _fetchProduct();
+    futureProducts = _fetchProducts();
   }
 
   @override
@@ -70,13 +72,30 @@ class _HttpDetailsScreenState extends State<HttpDetailsScreen> {
   }
 }
 
-Future<Product> fetchProduct() async {
+Future<Product> _fetchProduct() async {
   final response =
       await http.get(Uri.parse('http://localhost:3000/products/1'));
 
   if (response.statusCode == 200) {
+    // If server response 200 OK, parse the JSON
     return Product.fromJson(jsonDecode(response.body));
   } else {
+    // else throw an exception
     throw Exception('Failed to load poduct');
+  }
+}
+
+Future<List<Product>> _fetchProducts() async {
+  final response = await http.get(Uri.parse('http://localhost:3000/products'));
+
+  if (response.statusCode == 200) {
+    var productsJson = jsonDecode(response.body) as List;
+    List<Product> products = productsJson
+        .map((productJson) => Product.fromJson(productJson))
+        .toList();
+
+    return products;
+  } else {
+    throw Exception('Failed to load poducts');
   }
 }

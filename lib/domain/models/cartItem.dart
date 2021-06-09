@@ -1,4 +1,4 @@
-import 'package:flutterpath/domain/models/Product.dart';
+import 'package:flutterpath/domain/models/product.dart';
 
 class CartItem {
   final Product product;
