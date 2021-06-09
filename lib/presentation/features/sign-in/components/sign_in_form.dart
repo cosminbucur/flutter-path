@@ -59,7 +59,7 @@ class _SignInFormState extends State<SignInForm> {
             press: () {
               if (_formKey.currentState!.validate()) {
                 _formKey.currentState!.save();
-                Navigator.pushNamed(context, AppRoutes.loginSuccess);
+                Navigator.pushNamed(context, AppRoutes.home);
               }
             },
           ),

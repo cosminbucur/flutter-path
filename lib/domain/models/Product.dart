@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 
 class Product {
@@ -22,6 +24,35 @@ class Product {
     this.isFavorite = false,
     this.isPopular = false,
   });
+
+  factory Product.fromJson(Map<String, dynamic> json) {
+    var imagesJson = json['images'];
+    var colorsJson = json['colors'];
+
+    List<String> images = List.from(imagesJson);
+    List<String> colorsCodes = List.from(colorsJson);
+    List<Color> colors =
+        colorsCodes.map((colorCode) => _toColor(colorCode)).toList();
+
+    return Product(
+      id: json['id'],
+      title: json['title'],
+      description: json['description'],
+      images: images,
+      colors: colors,
+      rating: json['rating'],
+      price: json['price'],
+      isFavorite: json['isFavorite'],
+      isPopular: json['isPopular'],
+    );
+  }
+}
+
+Color _toColor(String colorString) {
+  String valueString =
+      colorString.split('(0x')[1].split(')')[0]; // kind of hacky..
+  int value = int.parse(valueString, radix: 16);
+  return new Color(value);
 }
 
 // demo products
@@ -38,7 +69,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836D88),
       Color(0xFFDECB9C),
-      Colors.white,
+      Color(0xFFF6625E),
     ],
     title: "Wireless Controller for PS4",
     price: 64.99,
@@ -59,7 +90,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836D88),
       Color(0xFFDECB9C),
-      Colors.white,
+      Color(0xFFF6625E),
     ],
     title: "TV set",
     price: 50.5,
@@ -78,7 +109,7 @@ List<Product> demoProducts = [
       Color(0xFFF6625E),
       Color(0xFF836D88),
       Color(0xFFDECB9C),
-      Colors.white,
+      Color(0xFFF6625E),
     ],
     title: "Remote control",
     price: 23.5,

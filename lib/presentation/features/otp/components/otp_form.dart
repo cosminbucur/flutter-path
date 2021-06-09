@@ -135,7 +135,7 @@ class _OtpFormState extends State<OtpForm> {
           DefaultButton(
             text: "Continue",
             press: () {
-              Navigator.pushNamed(context, AppRoutes.loginSuccess);
+              Navigator.pushNamed(context, AppRoutes.home);
             },
           )
         ],

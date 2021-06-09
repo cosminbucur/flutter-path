@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutterpath/constants/constants.dart';
-import 'package:flutterpath/domain/models/Cart.dart';
+import 'package:flutterpath/domain/models/CartItem.dart';
 import 'package:flutterpath/presentation/features/cart/components/body.dart';
 import 'package:flutterpath/presentation/widgets/default_button.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';

@@ -33,7 +33,7 @@ class AwesomeApp extends StatelessWidget {
       title: 'Flutter Path',
       theme: darkThemeData(context),
       initialRoute: AppRoutes.splash,
-      // initialRoute: AppRoutes.profile,
+      // initialRoute: AppRoutes.httpDetails,
       routes: routes,
     );
   }
