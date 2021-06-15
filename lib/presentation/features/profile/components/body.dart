@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 
 import 'profile_menu_item.dart';
 import 'profile_picture.dart';
@@ -14,27 +15,27 @@ class Body extends StatelessWidget {
         SizedBox(height: 20),
         ProfileMenuItem(
           text: "My Account",
-          icon: "assets/icons/user.svg",
+          icon: Assets.icons + "user.svg",
           press: () {},
         ),
         ProfileMenuItem(
           text: "Notifications",
-          icon: "assets/icons/bell.svg",
+          icon: Assets.icons + "bell.svg",
           press: () {},
         ),
         ProfileMenuItem(
           text: "Settings",
-          icon: "assets/icons/settings.svg",
+          icon: Assets.icons + "settings.svg",
           press: () {},
         ),
         ProfileMenuItem(
           text: "Help Center",
-          icon: "assets/icons/question_mark.svg",
+          icon: Assets.icons + "question_mark.svg",
           press: () {},
         ),
         ProfileMenuItem(
           text: "Sign Out",
-          icon: "assets/icons/sign_out.svg",
+          icon: Assets.icons + "sign_out.svg",
           press: () {},
         ),
       ],

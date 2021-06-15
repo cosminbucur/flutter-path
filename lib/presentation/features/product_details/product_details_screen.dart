@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/domain/models/product.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 
@@ -39,7 +40,7 @@ class ProductDetailsScreen extends StatelessWidget {
                       style: TextStyle(fontWeight: FontWeight.w600),
                     ),
                     const SizedBox(width: 5),
-                    SvgPicture.asset("assets/icons/star.svg"),
+                    SvgPicture.asset(Assets.icons + "star.svg"),
                   ],
                 ),
               ),

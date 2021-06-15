@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/presentation/features/sign-in/components/social_card.dart';
 import 'package:flutterpath/presentation/features/sign-up/components/sign_up_form.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
@@ -44,11 +45,11 @@ class _BodyState extends State<Body> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SocialCard(
-                      icon: "assets/icons/google-icon.svg",
+                      icon: Assets.icons + "google-icon.svg",
                       press: () {},
                     ),
                     SocialCard(
-                      icon: "assets/icons/facebook-2.svg",
+                      icon: Assets.icons + "facebook-2.svg",
                       press: () {},
                     ),
                   ],

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 
 class Categories extends StatelessWidget {
@@ -8,11 +9,11 @@ class Categories extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     List<Map<String, dynamic>> categories = [
-      {"icon": "assets/icons/google-icon.svg", "text": "Flash Deal"},
-      {"icon": "assets/icons/google-icon.svg", "text": "Bill"},
-      {"icon": "assets/icons/google-icon.svg", "text": "Game"},
-      {"icon": "assets/icons/google-icon.svg", "text": "Daily Gift"},
-      {"icon": "assets/icons/google-icon.svg", "text": "More"},
+      {"icon": Assets.icons + "google-icon.svg", "text": "Flash Deal"},
+      {"icon": Assets.icons + "google-icon.svg", "text": "Bill"},
+      {"icon": Assets.icons + "google-icon.svg", "text": "Game"},
+      {"icon": Assets.icons + "google-icon.svg", "text": "Daily Gift"},
+      {"icon": Assets.icons + "google-icon.svg", "text": "More"},
     ];
 
     return Padding(

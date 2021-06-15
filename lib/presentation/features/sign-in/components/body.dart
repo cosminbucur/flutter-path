@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/presentation/widgets/widgets.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 
@@ -40,11 +41,11 @@ class Body extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     SocialCard(
-                      icon: "assets/icons/google-icon.svg",
+                      icon: Assets.icons + "google-icon.svg",
                       press: () {},
                     ),
                     SocialCard(
-                      icon: "assets/icons/facebook-2.svg",
+                      icon: Assets.icons + "facebook-2.svg",
                       press: () {},
                     ),
                   ],

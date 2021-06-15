@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutterpath/config/routes/routes.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/constants/constants.dart';
 import 'package:flutterpath/constants/enums.dart';
 
@@ -40,7 +41,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 Navigator.pushNamed(context, AppRoutes.home);
               },
               icon: SvgPicture.asset(
-                "assets/icons/shop.svg",
+                Assets.icons + "shop.svg",
                 color: MenuState.home == selectedMenu
                     ? kPrimaryColor
                     : activeIconColor,
@@ -49,7 +50,7 @@ class CustomBottomNavBar extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: SvgPicture.asset(
-                "assets/icons/heart.svg",
+                Assets.icons + "heart.svg",
                 color: MenuState.favorite == selectedMenu
                     ? kPrimaryColor
                     : activeIconColor,
@@ -58,7 +59,7 @@ class CustomBottomNavBar extends StatelessWidget {
             IconButton(
               onPressed: () {},
               icon: SvgPicture.asset(
-                "assets/icons/chat.svg",
+                Assets.icons + "chat.svg",
                 color: MenuState.message == selectedMenu
                     ? kPrimaryColor
                     : activeIconColor,
@@ -69,7 +70,7 @@ class CustomBottomNavBar extends StatelessWidget {
                 Navigator.pushNamed(context, AppRoutes.profile);
               },
               icon: SvgPicture.asset(
-                "assets/icons/user.svg",
+                Assets.icons + "user.svg",
                 color: MenuState.profile == selectedMenu
                     ? kPrimaryColor
                     : activeIconColor,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 
 class ProfilePicture extends StatelessWidget {
   const ProfilePicture({
@@ -33,7 +34,7 @@ class ProfilePicture extends StatelessWidget {
                   ),
                 ),
                 onPressed: () {},
-                child: SvgPicture.asset("assets/icons/camera.svg"),
+                child: SvgPicture.asset(Assets.icons + "camera.svg"),
               ),
             ),
           ),
