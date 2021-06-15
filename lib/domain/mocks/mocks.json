@@ -9,10 +9,10 @@
         "assets/images/item_4.jpeg"
       ],
       "colors": [
-        "Color(0xFFF6625E)",
-        "Color(0xFF836D88)",
-        "Color(0xFFDECB9C)",
-        "Color(0xFFF6625E)"
+        "0xFFF6625E",
+        "0xFF836D88",
+        "0xFFDECB9C",
+        "0xFFF6625E"
       ],
       "title": "Wireless Controller for PS4",
       "price": 64.99,
@@ -29,10 +29,10 @@
         "assets/images/item_3.jpeg"
       ],
       "colors": [
-        "Color(0xFFF6625E)",
-        "Color(0xFF836D88)",
-        "Color(0xFFDECB9C)",
-        "Color(0xFFF6625E)"
+        "0xFFF6625E",
+        "0xFF836D88",
+        "0xFFDECB9C",
+        "0xFFF6625E"
       ],
       "title": "TV set1",
       "price": 50.5,
@@ -48,10 +48,10 @@
         "assets/images/item_2.jpeg"
       ],
       "colors": [
-        "Color(0xFFF6625E)",
-        "Color(0xFF836D88)",
-        "Color(0xFFDECB9C)",
-        "Color(0xFFF6625E)"
+        "0xFFF6625E",
+        "0xFF836D88",
+        "0xFFDECB9C",
+        "0xFFF6625E"
       ],
       "title": "Remote control1",
       "price": 23.5,

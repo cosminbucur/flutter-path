@@ -14,6 +14,7 @@ class Body extends StatefulWidget {
   _BodyState createState() => _BodyState();
 }
 
+// TODO: move body to screen
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {

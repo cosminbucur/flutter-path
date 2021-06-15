@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutterpath/constants/assets_path.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
 
 import 'section_tile.dart';
@@ -25,7 +26,7 @@ class SpecialOffers extends StatelessWidget {
             children: [
               SpecialOfferCard(
                 category: "Smartphones",
-                image: "assets/images/image_banner_2.jpeg",
+                image: AssetsBasePath.images + 'image_banner_2.jpeg',
                 numOfBrands: 18,
                 press: () {},
               ),

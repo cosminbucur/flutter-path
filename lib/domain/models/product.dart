@@ -1,10 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:json_annotation/json_annotation.dart';
+part 'product.g.dart';
 
+@JsonSerializable(explicitToJson: true)
 class Product {
   final int id;
   final String title;
   final String description;
   final List<String> images;
+  @ColorConverter()
   final List<Color> colors;
   final double rating;
   final double price;
@@ -23,34 +27,22 @@ class Product {
     this.isPopular = false,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) {
-    var imagesJson = json['images'];
-    var colorsJson = json['colors'];
+  factory Product.fromJson(Map<String, dynamic> json) =>
+      _$ProductFromJson(json);
 
-    List<String> images = List.from(imagesJson);
-    List<String> colorsCodes = List.from(colorsJson);
-    List<Color> colors =
-        colorsCodes.map((colorCode) => _toColor(colorCode)).toList();
-
-    return Product(
-      id: json['id'],
-      title: json['title'],
-      description: json['description'],
-      images: images,
-      colors: colors,
-      rating: json['rating'],
-      price: json['price'],
-      isFavorite: json['isFavorite'],
-      isPopular: json['isPopular'],
-    );
-  }
+  Map<String, dynamic> toJson() => _$ProductToJson(this);
 }
 
-Color _toColor(String colorString) {
-  String valueString =
-      colorString.split('(0x')[1].split(')')[0]; // kind of hacky..
-  int value = int.parse(valueString, radix: 16);
-  return new Color(value);
+class ColorConverter implements JsonConverter<Color, String> {
+  const ColorConverter();
+
+  @override
+  Color fromJson(String colorCode) {
+    return new Color(int.parse(colorCode));
+  }
+
+  @override
+  String toJson(Color color) => color.value.toString();
 }
 
 // demo products
