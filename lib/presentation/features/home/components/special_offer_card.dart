@@ -17,13 +17,12 @@ class SpecialOfferCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Padding(
       padding:
-          EdgeInsets.only(left: sizeConfig.getProportionateScreenWidth(20)),
+          EdgeInsets.only(left: SizeConfig.getProportionateScreenWidth(20)),
       child: SizedBox(
-        width: sizeConfig.getProportionateScreenWidth(242),
-        height: sizeConfig.getProportionateScreenHeight(100),
+        width: SizeConfig.getProportionateScreenWidth(242),
+        height: SizeConfig.getProportionateScreenHeight(100),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(20),
           child: Stack(
@@ -46,8 +45,8 @@ class SpecialOfferCard extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: sizeConfig.getProportionateScreenWidth(15),
-                  vertical: sizeConfig.getProportionateScreenWidth(10),
+                  horizontal: SizeConfig.getProportionateScreenWidth(15),
+                  vertical: SizeConfig.getProportionateScreenWidth(10),
                 ),
                 child: Text.rich(
                   TextSpan(
@@ -56,7 +55,7 @@ class SpecialOfferCard extends StatelessWidget {
                       TextSpan(
                         text: "$category\n",
                         style: TextStyle(
-                          fontSize: sizeConfig.getProportionateScreenWidth(18),
+                          fontSize: SizeConfig.getProportionateScreenWidth(18),
                           fontWeight: FontWeight.bold,
                         ),
                       ),

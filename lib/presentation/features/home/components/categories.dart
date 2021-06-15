@@ -15,10 +15,9 @@ class Categories extends StatelessWidget {
       {"icon": "assets/icons/google-icon.svg", "text": "More"},
     ];
 
-    SizeConfig sizeConfig = SizeConfig(context);
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: sizeConfig.getProportionateScreenWidth(20)),
+          horizontal: SizeConfig.getProportionateScreenWidth(20)),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -51,18 +50,17 @@ class CategoryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return GestureDetector(
       onTap: press,
       child: SizedBox(
-        width: sizeConfig.getProportionateScreenWidth(55),
+        width: SizeConfig.getProportionateScreenWidth(55),
         child: Column(
           children: [
             AspectRatio(
               aspectRatio: 1,
               child: Container(
                 padding: EdgeInsets.all(
-                  sizeConfig.getProportionateScreenWidth(15),
+                  SizeConfig.getProportionateScreenWidth(15),
                 ),
                 decoration: BoxDecoration(
                   color: Color(0xFFFFECDF),

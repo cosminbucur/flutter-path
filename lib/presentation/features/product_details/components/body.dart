@@ -18,7 +18,6 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SingleChildScrollView(
       child: Column(
         children: [
@@ -40,10 +39,10 @@ class Body extends StatelessWidget {
                         color: Colors.grey,
                         child: Padding(
                           padding: EdgeInsets.only(
-                            left: sizeConfig.screenWidth * 0.15,
-                            right: sizeConfig.screenWidth * 0.15,
-                            top: sizeConfig.getProportionateScreenWidth(15),
-                            bottom: sizeConfig.getProportionateScreenWidth(40),
+                            left: SizeConfig.screenWidth * 0.15,
+                            right: SizeConfig.screenWidth * 0.15,
+                            top: SizeConfig.getProportionateScreenWidth(15),
+                            bottom: SizeConfig.getProportionateScreenWidth(40),
                           ),
                           child: DefaultButton(
                             text: "Add to Cart",

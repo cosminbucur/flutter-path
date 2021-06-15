@@ -16,13 +16,12 @@ class ProductDescription extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Padding(
           padding: EdgeInsets.symmetric(
-              horizontal: sizeConfig.getProportionateScreenWidth(20)),
+              horizontal: SizeConfig.getProportionateScreenWidth(20)),
           child: Text(
             product.title,
             style: Theme.of(context).textTheme.headline6,
@@ -32,8 +31,8 @@ class ProductDescription extends StatelessWidget {
         Align(
           alignment: Alignment.centerRight,
           child: Container(
-            padding: EdgeInsets.all(sizeConfig.getProportionateScreenWidth(15)),
-            width: sizeConfig.getProportionateScreenWidth(64),
+            padding: EdgeInsets.all(SizeConfig.getProportionateScreenWidth(15)),
+            width: SizeConfig.getProportionateScreenWidth(64),
             decoration: BoxDecoration(
               color: product.isFavorite ? Color(0xFFFFE6E6) : Color(0xFFF5F6F9),
               borderRadius: BorderRadius.only(
@@ -49,8 +48,8 @@ class ProductDescription extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.only(
-            left: sizeConfig.getProportionateScreenWidth(20),
-            right: sizeConfig.getProportionateScreenWidth(64),
+            left: SizeConfig.getProportionateScreenWidth(20),
+            right: SizeConfig.getProportionateScreenWidth(64),
           ),
           child: Text(
             product.description,
@@ -59,7 +58,7 @@ class ProductDescription extends StatelessWidget {
         ),
         Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: sizeConfig.getProportionateScreenWidth(20),
+            horizontal: SizeConfig.getProportionateScreenWidth(20),
             vertical: 10,
           ),
           child: GestureDetector(

@@ -21,21 +21,20 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Form(
       key: _formKey,
       child: Column(
         children: [
           _buildFirstNameFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           _buildLastNameFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           _buildPhoneNumberFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           _buildAddressFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           FormError(errors: errors),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
           DefaultButton(
             text: "Continue",
             press: () {
@@ -50,7 +49,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   }
 
   TextFormField _buildFirstNameFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       onSaved: (newValue) => firstName = newValue!,
       onChanged: (value) {
@@ -72,9 +70,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.account_circle)),
       ),
@@ -82,7 +80,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   }
 
   TextFormField _buildLastNameFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       onSaved: (newValue) => lastName = newValue!,
       onChanged: (value) {
@@ -104,9 +101,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.account_circle)),
       ),
@@ -114,7 +111,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   }
 
   TextFormField _buildPhoneNumberFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       keyboardType: TextInputType.number,
       onSaved: (newValue) => phoneNumber = newValue!,
@@ -137,9 +133,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.location_city)),
       ),
@@ -147,7 +143,6 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
   }
 
   TextFormField _buildAddressFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       onSaved: (newValue) => address = newValue!,
       onChanged: (value) {
@@ -169,9 +164,9 @@ class _CompleteProfileFormState extends State<CompleteProfileForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.account_circle)),
       ),

@@ -30,14 +30,13 @@ class _PopularProductsState extends State<PopularProducts> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: [
         SectionTile(
           text: "Popular Product",
           press: () {},
         ),
-        SizedBox(height: sizeConfig.getProportionateScreenWidth(20)),
+        SizedBox(height: SizeConfig.getProportionateScreenWidth(20)),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: FutureBuilder<List<Product>>(
@@ -66,7 +65,7 @@ class _PopularProductsState extends State<PopularProducts> {
                         return SizedBox.shrink();
                       },
                     ),
-                    SizedBox(width: sizeConfig.getProportionateScreenWidth(20)),
+                    SizedBox(width: SizeConfig.getProportionateScreenWidth(20)),
                   ],
                 );
               } else if (snapshot.hasError) {

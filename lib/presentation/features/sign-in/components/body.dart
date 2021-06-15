@@ -10,7 +10,6 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
@@ -21,12 +20,12 @@ class Body extends StatelessWidget {
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+                SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
                 Text(
                   "Welcome Back",
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: sizeConfig.getProportionateScreenHeight(28),
+                    fontSize: SizeConfig.getProportionateScreenHeight(28),
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -34,9 +33,9 @@ class Body extends StatelessWidget {
                   "Sign in with your email and password \nor continue with social meida",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+                SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
                 SignInForm(),
-                SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+                SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

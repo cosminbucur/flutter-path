@@ -13,23 +13,22 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: sizeConfig.getProportionateScreenWidth(20),
+            horizontal: SizeConfig.getProportionateScreenWidth(20),
           ),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: sizeConfig.screenHeight * 0.05),
+                SizedBox(height: SizeConfig.screenHeight * 0.05),
                 Text(
                   "OTP Verification",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: sizeConfig.getProportionateScreenHeight(28),
+                      fontSize: SizeConfig.getProportionateScreenHeight(28),
                       fontWeight: FontWeight.bold,
                       height: 1.5),
                 ),
@@ -38,9 +37,9 @@ class _BodyState extends State<Body> {
                   textAlign: TextAlign.center,
                 ),
                 _buildTimer(),
-                SizedBox(height: sizeConfig.screenHeight * 0.15),
+                SizedBox(height: SizeConfig.screenHeight * 0.15),
                 OtpForm(),
-                SizedBox(height: sizeConfig.screenHeight * 0.1),
+                SizedBox(height: SizeConfig.screenHeight * 0.1),
                 GestureDetector(
                   onTap: () {
                     // resend OTP

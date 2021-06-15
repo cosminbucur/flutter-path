@@ -13,11 +13,10 @@ class CartItemCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Row(
       children: [
         SizedBox(
-          width: sizeConfig.getProportionateScreenWidth(88),
+          width: SizeConfig.getProportionateScreenWidth(88),
           child: AspectRatio(
             aspectRatio: 0.88,
             child: Container(
@@ -30,7 +29,7 @@ class CartItemCard extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(width: sizeConfig.getProportionateScreenWidth(20)),
+        SizedBox(width: SizeConfig.getProportionateScreenWidth(20)),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

@@ -11,23 +11,21 @@ class FormError extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: List.generate(
         errors.length,
         (index) => _formErrorText(
           error: errors[index],
-          sizeConfig: sizeConfig,
         ),
       ),
     );
   }
 
-  Row _formErrorText({required String error, required SizeConfig sizeConfig}) {
+  Row _formErrorText({required String error}) {
     return Row(
       children: [
         Icon(Icons.error),
-        SizedBox(width: sizeConfig.getProportionateScreenWidth(10)),
+        SizedBox(width: SizeConfig.getProportionateScreenWidth(10)),
         Text(error),
       ],
     );

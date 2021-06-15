@@ -13,10 +13,9 @@ class TopRoundedContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Container(
-      margin: EdgeInsets.only(top: sizeConfig.getProportionateScreenWidth(20)),
-      padding: EdgeInsets.only(top: sizeConfig.getProportionateScreenWidth(20)),
+      margin: EdgeInsets.only(top: SizeConfig.getProportionateScreenWidth(20)),
+      padding: EdgeInsets.only(top: SizeConfig.getProportionateScreenWidth(20)),
       width: double.infinity,
       decoration: BoxDecoration(
         color: color,

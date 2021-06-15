@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutterpath/presentation/features/sign-in/components/social_card.dart';
 import 'package:flutterpath/presentation/features/sign-up/components/sign_up_form.dart';
 import 'package:flutterpath/utils/helpers/size_config.dart';
-import 'package:flutterpath/utils/helpers/size_config2.dart';
 
 class Body extends StatefulWidget {
   Body({Key? key}) : super(key: key);
@@ -20,17 +19,17 @@ class _BodyState extends State<Body> {
         width: double.infinity,
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: SizeConfig2.getProportionateScreenWidth(20),
+            horizontal: SizeConfig.getProportionateScreenWidth(20),
           ),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: SizeConfig2.screenHeight * 0.02),
+                SizedBox(height: SizeConfig.screenHeight * 0.02),
                 Text(
                   "Sign Up",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: SizeConfig2.getProportionateScreenHeight(28),
+                      fontSize: SizeConfig.getProportionateScreenHeight(28),
                       fontWeight: FontWeight.bold,
                       height: 1.5),
                 ),
@@ -38,9 +37,9 @@ class _BodyState extends State<Body> {
                   "Complete your details or continue \nwith social media",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: SizeConfig2.screenHeight * 0.07),
+                SizedBox(height: SizeConfig.screenHeight * 0.07),
                 SignUpForm(),
-                SizedBox(height: SizeConfig2.screenHeight * 0.07),
+                SizedBox(height: SizeConfig.screenHeight * 0.07),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -55,7 +54,7 @@ class _BodyState extends State<Body> {
                   ],
                 ),
                 SizedBox(
-                  height: SizeConfig2.getProportionateScreenHeight(20),
+                  height: SizeConfig.getProportionateScreenHeight(20),
                 ),
                 Text(
                   "By continuing, you confirm that you agree \nwith our Terms and Conditions",

@@ -14,15 +14,14 @@ class SocialCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return GestureDetector(
       onTap: press,
       child: Container(
         padding: EdgeInsets.all(
-          sizeConfig.getProportionateScreenWidth(12),
+          SizeConfig.getProportionateScreenWidth(12),
         ),
-        height: sizeConfig.getProportionateScreenHeight(40),
-        width: sizeConfig.getProportionateScreenWidth(40),
+        height: SizeConfig.getProportionateScreenHeight(40),
+        width: SizeConfig.getProportionateScreenWidth(40),
         decoration: BoxDecoration(
           color: Colors.grey,
           shape: BoxShape.circle,

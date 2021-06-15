@@ -43,11 +43,10 @@ class CheckoutCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Container(
       padding: EdgeInsets.symmetric(
-        vertical: sizeConfig.getProportionateScreenWidth(15),
-        horizontal: sizeConfig.getProportionateScreenWidth(30),
+        vertical: SizeConfig.getProportionateScreenWidth(15),
+        horizontal: SizeConfig.getProportionateScreenWidth(30),
       ),
       // demo only
       // height: 174,
@@ -73,8 +72,8 @@ class CheckoutCard extends StatelessWidget {
               children: [
                 Container(
                   padding: EdgeInsets.all(10),
-                  height: sizeConfig.getProportionateScreenWidth(40),
-                  width: sizeConfig.getProportionateScreenWidth(40),
+                  height: SizeConfig.getProportionateScreenWidth(40),
+                  width: SizeConfig.getProportionateScreenWidth(40),
                   decoration: BoxDecoration(
                     color: Color(0xFFF5F6F9),
                     borderRadius: BorderRadius.circular(10),
@@ -91,7 +90,7 @@ class CheckoutCard extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(20)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(20)),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -107,7 +106,7 @@ class CheckoutCard extends StatelessWidget {
                   ),
                 ),
                 SizedBox(
-                  width: sizeConfig.getProportionateScreenWidth(190),
+                  width: SizeConfig.getProportionateScreenWidth(190),
                   child: DefaultButton(
                     text: "Check Out",
                     press: () {},

@@ -12,23 +12,22 @@ class Body extends StatefulWidget {
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: sizeConfig.getProportionateScreenWidth(20),
+            horizontal: SizeConfig.getProportionateScreenWidth(20),
           ),
           child: SingleChildScrollView(
             child: Column(
               children: [
-                SizedBox(height: sizeConfig.screenHeight * 0.02),
+                SizedBox(height: SizeConfig.screenHeight * 0.02),
                 Text(
                   "Complete Profile",
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: sizeConfig.getProportionateScreenHeight(28),
+                      fontSize: SizeConfig.getProportionateScreenHeight(28),
                       fontWeight: FontWeight.bold,
                       height: 1.5),
                 ),
@@ -36,9 +35,9 @@ class _BodyState extends State<Body> {
                   "Complete your details",
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(height: sizeConfig.screenHeight * 0.05),
+                SizedBox(height: SizeConfig.screenHeight * 0.05),
                 CompleteProfileForm(),
-                SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+                SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
                 Text(
                   "By continuing, you confirm that you agree \nwith our Terms and Conditions",
                   textAlign: TextAlign.center,

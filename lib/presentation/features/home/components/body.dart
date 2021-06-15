@@ -14,26 +14,24 @@ class Body extends StatefulWidget {
   _BodyState createState() => _BodyState();
 }
 
-// TODO: move body to screen
 class _BodyState extends State<Body> {
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(20)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(20)),
             HomeHeader(),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(30)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(30)),
             DiscountBanner(),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(30)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(30)),
             Categories(),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(30)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(30)),
             SpecialOffers(),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(30)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(30)),
             PopularProducts(),
-            SizedBox(height: sizeConfig.getProportionateScreenWidth(30)),
+            SizedBox(height: SizeConfig.getProportionateScreenWidth(30)),
           ],
         ),
       ),

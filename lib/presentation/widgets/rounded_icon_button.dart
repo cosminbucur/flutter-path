@@ -13,10 +13,9 @@ class RoundedIconButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SizedBox(
-      height: sizeConfig.getProportionateScreenWidth(40),
-      width: sizeConfig.getProportionateScreenWidth(40),
+      height: SizeConfig.getProportionateScreenWidth(40),
+      width: SizeConfig.getProportionateScreenWidth(40),
       child: TextButton(
         onPressed: press,
         child: Icon(iconData),

@@ -28,7 +28,6 @@ class _BodyState extends State<Body> {
 
   @override
   Widget build(BuildContext context) {
-    var sizeConfig = SizeConfig(context);
     return SafeArea(
       child: SizedBox(
         width: double.infinity,
@@ -53,7 +52,7 @@ class _BodyState extends State<Body> {
               flex: 2,
               child: Padding(
                 padding: EdgeInsets.symmetric(
-                  horizontal: sizeConfig.getProportionateScreenWidth(20),
+                  horizontal: SizeConfig.getProportionateScreenWidth(20),
                 ),
                 child: Column(
                   children: <Widget>[

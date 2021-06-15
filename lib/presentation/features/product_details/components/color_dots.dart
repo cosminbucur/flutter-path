@@ -14,12 +14,11 @@ class ColorDots extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     // hardcoded
     int selectedColor = 3;
     return Padding(
       padding: EdgeInsets.symmetric(
-          horizontal: sizeConfig.getProportionateScreenWidth(20)),
+          horizontal: SizeConfig.getProportionateScreenWidth(20)),
       child: Row(
         children: [
           ...List.generate(
@@ -34,7 +33,7 @@ class ColorDots extends StatelessWidget {
             iconData: Icons.remove,
             press: () {},
           ),
-          SizedBox(width: sizeConfig.getProportionateScreenWidth(15)),
+          SizedBox(width: SizeConfig.getProportionateScreenWidth(15)),
           RoundedIconButton(
             iconData: Icons.add,
             press: () {},
@@ -57,12 +56,11 @@ class ColorDot extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Container(
       margin: EdgeInsets.only(right: 2),
       padding: EdgeInsets.all(8),
-      height: sizeConfig.getProportionateScreenWidth(40),
-      width: sizeConfig.getProportionateScreenWidth(40),
+      height: SizeConfig.getProportionateScreenWidth(40),
+      width: SizeConfig.getProportionateScreenWidth(40),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         border: Border.all(

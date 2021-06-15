@@ -20,15 +20,14 @@ class _SignInFormState extends State<SignInForm> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Form(
       key: _formKey,
       child: Column(
         children: [
           _buildEmailFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           _buildPasswordFormField(),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           Row(
             children: [
               Checkbox(
@@ -53,7 +52,7 @@ class _SignInFormState extends State<SignInForm> {
             ],
           ),
           FormError(errors: errors),
-          SizedBox(height: sizeConfig.getProportionateScreenHeight(30)),
+          SizedBox(height: SizeConfig.getProportionateScreenHeight(30)),
           DefaultButton(
             text: "Continue",
             press: () {
@@ -69,7 +68,6 @@ class _SignInFormState extends State<SignInForm> {
   }
 
   TextFormField _buildEmailFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => email = newValue!,
@@ -97,9 +95,9 @@ class _SignInFormState extends State<SignInForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.email)),
       ),
@@ -107,7 +105,6 @@ class _SignInFormState extends State<SignInForm> {
   }
 
   TextFormField _buildPasswordFormField() {
-    SizeConfig sizeConfig = SizeConfig(context);
     return TextFormField(
       obscureText: true,
       onSaved: (newValue) => password = newValue!,
@@ -135,9 +132,9 @@ class _SignInFormState extends State<SignInForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.lock)),
       ),

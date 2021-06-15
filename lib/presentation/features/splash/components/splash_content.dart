@@ -14,14 +14,13 @@ class SplashContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var sizeConfig = SizeConfig(context);
     return Column(
       children: [
         Spacer(),
         Text(
           'TOKOTO',
           style: TextStyle(
-              fontSize: sizeConfig.getProportionateScreenHeight(36),
+              fontSize: SizeConfig.getProportionateScreenHeight(36),
               color: kPrimaryColor,
               fontWeight: FontWeight.bold),
         ),
@@ -29,8 +28,8 @@ class SplashContent extends StatelessWidget {
         Spacer(flex: 2),
         Image.asset(
           image,
-          height: sizeConfig.getProportionateScreenHeight(265),
-          width: sizeConfig.getProportionateScreenWidth(235),
+          height: SizeConfig.getProportionateScreenHeight(265),
+          width: SizeConfig.getProportionateScreenWidth(235),
         )
       ],
     );

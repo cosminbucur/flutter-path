@@ -14,10 +14,9 @@ class DefaultButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SizedBox(
       width: double.infinity,
-      height: sizeConfig.getProportionateScreenHeight(56),
+      height: SizeConfig.getProportionateScreenHeight(56),
       child: TextButton(
         style: TextButton.styleFrom(
           primary: kPrimaryColor,
@@ -28,7 +27,7 @@ class DefaultButton extends StatelessWidget {
         child: Text(
           "Continue",
           style: TextStyle(
-              fontSize: sizeConfig.getProportionateScreenHeight(18),
+              fontSize: SizeConfig.getProportionateScreenHeight(18),
               color: Colors.white),
         ),
       ),

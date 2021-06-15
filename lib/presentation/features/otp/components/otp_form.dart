@@ -40,8 +40,6 @@ class _OtpFormState extends State<OtpForm> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
-
     return Form(
       child: Column(
         children: [
@@ -49,7 +47,7 @@ class _OtpFormState extends State<OtpForm> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
-                width: sizeConfig.getProportionateScreenWidth(60),
+                width: SizeConfig.getProportionateScreenWidth(60),
                 child: TextFormField(
                   keyboardType: TextInputType.number,
                   autofocus: true,
@@ -59,7 +57,7 @@ class _OtpFormState extends State<OtpForm> {
                   // extract to constants
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                        vertical: sizeConfig.getProportionateScreenWidth(15)),
+                        vertical: SizeConfig.getProportionateScreenWidth(15)),
                     enabledBorder: _outlineInputBorder(),
                     focusedBorder: _outlineInputBorder(),
                     border: _outlineInputBorder(),
@@ -71,7 +69,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: sizeConfig.getProportionateScreenWidth(60),
+                width: SizeConfig.getProportionateScreenWidth(60),
                 child: TextFormField(
                   focusNode: pin2FocusNode,
                   keyboardType: TextInputType.number,
@@ -81,7 +79,7 @@ class _OtpFormState extends State<OtpForm> {
                   // extract to constants
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                        vertical: sizeConfig.getProportionateScreenWidth(15)),
+                        vertical: SizeConfig.getProportionateScreenWidth(15)),
                     enabledBorder: _outlineInputBorder(),
                     focusedBorder: _outlineInputBorder(),
                     border: _outlineInputBorder(),
@@ -91,7 +89,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: sizeConfig.getProportionateScreenWidth(60),
+                width: SizeConfig.getProportionateScreenWidth(60),
                 child: TextFormField(
                   focusNode: pin3FocusNode,
                   keyboardType: TextInputType.number,
@@ -101,7 +99,7 @@ class _OtpFormState extends State<OtpForm> {
                   // extract to constants
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                        vertical: sizeConfig.getProportionateScreenWidth(15)),
+                        vertical: SizeConfig.getProportionateScreenWidth(15)),
                     enabledBorder: _outlineInputBorder(),
                     focusedBorder: _outlineInputBorder(),
                     border: _outlineInputBorder(),
@@ -111,7 +109,7 @@ class _OtpFormState extends State<OtpForm> {
                 ),
               ),
               SizedBox(
-                width: sizeConfig.getProportionateScreenWidth(60),
+                width: SizeConfig.getProportionateScreenWidth(60),
                 child: TextFormField(
                   focusNode: pin4FocusNode,
                   keyboardType: TextInputType.number,
@@ -121,7 +119,7 @@ class _OtpFormState extends State<OtpForm> {
                   // extract to constants
                   decoration: InputDecoration(
                     contentPadding: EdgeInsets.symmetric(
-                        vertical: sizeConfig.getProportionateScreenWidth(15)),
+                        vertical: SizeConfig.getProportionateScreenWidth(15)),
                     enabledBorder: _outlineInputBorder(),
                     focusedBorder: _outlineInputBorder(),
                     border: _outlineInputBorder(),
@@ -131,7 +129,7 @@ class _OtpFormState extends State<OtpForm> {
               ),
             ],
           ),
-          SizedBox(height: sizeConfig.screenHeight * 0.15),
+          SizedBox(height: SizeConfig.screenHeight * 0.15),
           DefaultButton(
             text: "Continue",
             press: () {

@@ -8,13 +8,12 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: [
         Text(
           "Forgot Password",
           style: TextStyle(
-            fontSize: sizeConfig.getProportionateScreenWidth(28),
+            fontSize: SizeConfig.getProportionateScreenWidth(28),
             color: Colors.white,
             fontWeight: FontWeight.bold,
           ),
@@ -42,21 +41,20 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return SizedBox(
       width: double.infinity,
       child: SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: sizeConfig.getProportionateScreenWidth(20),
+            horizontal: SizeConfig.getProportionateScreenWidth(20),
           ),
           child: Column(
             children: [
-              SizedBox(height: sizeConfig.screenHeight * 0.04),
-              _buildEmailFormField(sizeConfig),
-              SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+              SizedBox(height: SizeConfig.screenHeight * 0.04),
+              _buildEmailFormField(),
+              SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
               FormError(errors: errors),
-              SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+              SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
               DefaultButton(
                 text: "Continue",
                 press: () {
@@ -65,7 +63,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
                   }
                 },
               ),
-              SizedBox(height: sizeConfig.getProportionateScreenHeight(40)),
+              SizedBox(height: SizeConfig.getProportionateScreenHeight(40)),
               NoAccountText(),
             ],
           ),
@@ -74,7 +72,7 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
     );
   }
 
-  TextFormField _buildEmailFormField(SizeConfig sizeConfig) {
+  TextFormField _buildEmailFormField() {
     return TextFormField(
       keyboardType: TextInputType.emailAddress,
       onSaved: (newValue) => email = newValue!,
@@ -110,9 +108,9 @@ class _ForgotPasswordFormState extends State<ForgotPasswordForm> {
         suffixIcon: Padding(
             padding: EdgeInsets.fromLTRB(
               0,
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
-              sizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
+              SizeConfig.getProportionateScreenWidth(20),
             ),
             child: Icon(Icons.email)),
       ),

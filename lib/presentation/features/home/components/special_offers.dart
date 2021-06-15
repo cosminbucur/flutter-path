@@ -12,35 +12,38 @@ class SpecialOffers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: [
         SectionTile(
           text: "Special for you",
           press: () {},
         ),
-        SizedBox(height: sizeConfig.getProportionateScreenWidth(20)),
+        SizedBox(height: SizeConfig.getProportionateScreenWidth(20)),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: Row(
             children: [
               SpecialOfferCard(
                 category: "Smartphones",
-                image: AssetsBasePath.images + 'image_banner_2.jpeg',
+                image: Assets.images + 'image_banner_2.jpeg',
                 numOfBrands: 18,
-                press: () {},
+                press: _toSmartphones,
               ),
               SpecialOfferCard(
                 category: "Fashion",
-                image: "assets/images/image_banner_3.jpeg",
+                image: Assets.images + "image_banner_3.jpeg",
                 numOfBrands: 24,
-                press: () {},
+                press: _toFashion,
               ),
-              SizedBox(height: sizeConfig.getProportionateScreenWidth(20)),
+              SizedBox(height: SizeConfig.getProportionateScreenWidth(20)),
             ],
           ),
         ),
       ],
     );
   }
+
+  void _toFashion() {}
+
+  void _toSmartphones() {}
 }

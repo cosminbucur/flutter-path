@@ -19,11 +19,10 @@ class _ProductImagesState extends State<ProductImages> {
   int selectedImage = 0;
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Column(
       children: [
         SizedBox(
-          width: sizeConfig.getProportionateScreenWidth(238),
+          width: SizeConfig.getProportionateScreenWidth(238),
           child: AspectRatio(
             aspectRatio: 1,
             child: Image.asset(widget.product.images[selectedImage]),
@@ -34,7 +33,7 @@ class _ProductImagesState extends State<ProductImages> {
           children: [
             ...List.generate(
               widget.product.images.length,
-              (index) => _buildSmallPreview(index, sizeConfig),
+              (index) => _buildSmallPreview(index),
             ),
           ],
         ),
@@ -42,7 +41,7 @@ class _ProductImagesState extends State<ProductImages> {
     );
   }
 
-  GestureDetector _buildSmallPreview(int index, SizeConfig sizeConfig) {
+  GestureDetector _buildSmallPreview(int index) {
     return GestureDetector(
       onTap: () {
         setState(() {
@@ -51,10 +50,10 @@ class _ProductImagesState extends State<ProductImages> {
       },
       child: Container(
         margin:
-            EdgeInsets.only(right: sizeConfig.getProportionateScreenWidth(15)),
-        padding: EdgeInsets.all(sizeConfig.getProportionateScreenHeight(8)),
-        height: sizeConfig.getProportionateScreenWidth(48),
-        width: sizeConfig.getProportionateScreenWidth(48),
+            EdgeInsets.only(right: SizeConfig.getProportionateScreenWidth(15)),
+        padding: EdgeInsets.all(SizeConfig.getProportionateScreenHeight(8)),
+        height: SizeConfig.getProportionateScreenWidth(48),
+        width: SizeConfig.getProportionateScreenWidth(48),
         decoration: BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.circular(10),

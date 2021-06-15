@@ -10,21 +10,20 @@ class NoAccountText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig sizeConfig = SizeConfig(context);
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
           "Don't have an account? ",
           style:
-              TextStyle(fontSize: sizeConfig.getProportionateScreenWidth(16)),
+              TextStyle(fontSize: SizeConfig.getProportionateScreenWidth(16)),
         ),
         GestureDetector(
           onTap: () => Navigator.pushNamed(context, AppRoutes.signUp),
           child: Text(
             "Sign up",
             style: TextStyle(
-                fontSize: sizeConfig.getProportionateScreenWidth(16),
+                fontSize: SizeConfig.getProportionateScreenWidth(16),
                 color: kPrimaryColor),
           ),
         ),
